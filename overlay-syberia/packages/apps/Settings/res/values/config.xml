@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2020 YAAP
+** Copyright 2020, The PixelExperience Project
+**
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
 ** You may obtain a copy of the License at
@@ -18,11 +19,18 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Shows the required view for in-display fingerprint -->
-    <bool name="config_needCustomFODView">true</bool>
+    <!-- Defines the location of the fingerprint sensor on the device
+       0 = back
+       1 = front
+       2 = left side
+       3 = right side
+    -->
+    <integer name="config_fingerprintSensorLocation">1</integer>
 
-    <!-- Does the battery LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
+    <!-- Screen off FOD -->
+    <bool name="config_supportScreenOffFod">true</bool>
+
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
 
 </resources>
